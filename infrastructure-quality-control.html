@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quality Control at Dharakrafts International - Rigorous inspection at every stage ensures only perfect natural stone reaches our global clients.">
+    <title>Quality Control | Dharakrafts International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_v2.css">
+    <style>
+        .infra-intro { padding: 70px 0 50px; background: var(--color-white); }
+        .infra-intro-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .infra-intro-text h2 { font-size: 2rem; margin-bottom: 8px; }
+        .infra-intro-text p { color: var(--color-text-muted); line-height: 1.9; margin-bottom: 16px; }
+        .infra-intro-img { border-radius: 10px; overflow: hidden; height: 420px; }
+        .infra-intro-img img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* QC Steps */
+        .qc-steps { padding: 60px 0; background: var(--color-bg-light); }
+        .qc-steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+        .qc-step-card { background: var(--color-white); border-radius: 10px; padding: 30px 24px; box-shadow: 0 4px 18px rgba(0,0,0,0.06); border-top: 4px solid var(--color-primary-gold); }
+        .qc-step-num { width: 44px; height: 44px; background: var(--color-primary-gold); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; }
+        .qc-step-card h3 { font-size: 1.05rem; color: var(--color-bg-dark); margin-bottom: 10px; }
+        .qc-step-card p { color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.7; }
+
+        /* Gallery */
+        .gallery-section { padding: 60px 0 80px; background: var(--color-white); }
+        .gallery-section .section-title { text-align: center; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
+        .gallery-item { border-radius: 8px; overflow: hidden; position: relative; cursor: pointer; background: #111; }
+        .gallery-item img { width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.4s ease, opacity 0.4s ease; }
+        .gallery-item:hover img { transform: scale(1.06); opacity: 0.85; }
+        .gallery-item.tall img { height: 420px; }
+        .gallery-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); padding: 20px 16px 14px; opacity: 0; transition: opacity 0.3s ease; }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay span { color: #fff; font-size: 0.85rem; font-family: var(--font-body); letter-spacing: 0.04em; }
+
+        /* Quote banner */
+        .qc-quote-banner { background: var(--color-bg-dark); padding: 55px 0; text-align: center; }
+        .qc-quote-banner blockquote { font-family: var(--font-accent); font-size: 1.4rem; font-style: italic; color: var(--color-primary-gold); max-width: 700px; margin: 0 auto 20px; line-height: 1.7; }
+        .qc-quote-banner p { color: #aaa; font-size: 0.9rem; }
+
+        @media (max-width: 900px) {
+            .infra-intro-layout { grid-template-columns: 1fr; }
+            .qc-steps-grid { grid-template-columns: 1fr 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 540px) {
+            .qc-steps-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-contact"><a href="mailto:info@dharakrafts.com"><i class="fa-solid fa-envelope"></i> Get Quote Now</a></div>
+            <div class="top-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><span class="logo-bold">Dharakrafts</span><span class="logo-light">International</span></a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="directors-message.html">Director's Message</a></li>
+                            <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html#products">Products <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="granite.html">Granite</a></li>
+                            <li><a href="marble.html">Marble</a></li>
+                            <li><a href="sandstone.html">Sandstone</a></li>
+                            <li><a href="slate.html">Slate</a></li>
+                            <li><a href="pebbles.html">Pebbles</a></li>
+                            <li><a href="quartz.html">Quartz</a></li>
+                            <li><a href="monuments.html">Monuments</a></li>
+                            <li><a href="statues.html">Statues</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="infrastructure-factory.html" class="active">Infrastructure <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="infrastructure-factory.html">Factory</a></li>
+                            <li><a href="infrastructure-quality-control.html" class="active">Quality Control</a></li>
+                            <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <div class="mobile-nav-header">
+            <span class="logo-bold" style="color:#B8860B">Dharakrafts</span>
+            <button class="mobile-menu-close" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Company <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="directors-message.html">Director's Message</a></li>
+                    <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="mobile-dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="marble.html">Marble</a></li>
+                    <li><a href="sandstone.html">Sandstone</a></li>
+                    <li><a href="slate.html">Slate</a></li>
+                    <li><a href="pebbles.html">Pebbles</a></li>
+                    <li><a href="quartz.html">Quartz</a></li>
+                    <li><a href="monuments.html">Monuments</a></li>
+                    <li><a href="statues.html">Statues</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="mobile-dropdown-toggle">Infrastructure <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="infrastructure-factory.html">Factory</a></li>
+                    <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                    <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="page-banner" style="background: linear-gradient(135deg, #1A1A1A 0%, #2c2c2c 100%);">
+            <div class="page-banner-overlay" style="background:rgba(0,0,0,0.45);"></div>
+            <div class="container page-banner-content">
+                <h1>Quality Control</h1>
+                <nav class="breadcrumb"><a href="index.html">Home</a> / <span>Infrastructure</span> / <span>Quality Control</span></nav>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section class="infra-intro">
+            <div class="container infra-intro-layout">
+                <div class="infra-intro-img">
+                    <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.06 (3).jpeg" alt="Quality Control — Monument Lineup">
+                </div>
+                <div class="infra-intro-text">
+                    <h2 class="section-title">Zero-Compromise Quality Standards</h2>
+                    <div class="divider" style="margin:1.2rem 0;"></div>
+                    <p>At Dharakrafts International, quality is not a department — it is a culture. Every stone that leaves our facility has passed through a rigorous multi-stage inspection process overseen by experienced quality controllers. From raw block selection at the quarry to the final surface finish, we measure, examine, and verify at every checkpoint.</p>
+                    <p>Our quality team verifies dimensional accuracy, surface flatness, finish consistency, colour uniformity and edge quality against the client's approved sample before any product is cleared for packaging. We maintain comprehensive inspection records for traceability and accountability on every shipment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- QC Steps -->
+        <section class="qc-steps">
+            <div class="container">
+                <h2 class="section-title" style="text-align:center;">Our Quality Control Process</h2>
+                <div class="divider" style="margin:1rem auto 0;"></div>
+                <div class="qc-steps-grid">
+                    <div class="qc-step-card">
+                        <div class="qc-step-num">1</div>
+                        <h3>Raw Block Inspection</h3>
+                        <p>Every block is visually inspected and tested for structural integrity, vein patterns, and colour consistency before entering the cutting line.</p>
+                    </div>
+                    <div class="qc-step-card">
+                        <div class="qc-step-num">2</div>
+                        <h3>Dimensional Verification</h3>
+                        <p>All cut pieces are measured for thickness, length, and width using calibrated instruments. Tolerances are held to ±1mm on all dimensions.</p>
+                    </div>
+                    <div class="qc-step-card">
+                        <div class="qc-step-num">3</div>
+                        <h3>Surface Finish Check</h3>
+                        <p>Polish grade, honing quality, and flamed or brushed textures are assessed under controlled lighting and compared against approved samples.</p>
+                    </div>
+                    <div class="qc-step-card">
+                        <div class="qc-step-num">4</div>
+                        <h3>Shade &amp; Tone Matching</h3>
+                        <p>Batches are sorted for colour consistency to ensure matching tones across all pieces in a single shipment or project order.</p>
+                    </div>
+                    <div class="qc-step-card">
+                        <div class="qc-step-num">5</div>
+                        <h3>Edge &amp; Corner Inspection</h3>
+                        <p>Edge profiles, chamfers, and corners are checked for chips, cracks, and profile accuracy before the piece is approved for packaging.</p>
+                    </div>
+                    <div class="qc-step-card">
+                        <div class="qc-step-num">6</div>
+                        <h3>Final Sign-Off</h3>
+                        <p>A senior QC officer reviews the complete lot and signs off before packaging begins. Each crate is tagged with a QC reference number.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Quality Control Gallery</h2>
+                <div class="divider" style="margin:1rem auto 0;"></div>
+                <div class="gallery-grid">
+                    <div class="gallery-item tall">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.06 (1).jpeg" alt="Team Inspecting Black Granite Pieces">
+                        <div class="gallery-overlay"><span>Team Inspection — Black Granite</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.06 (2).jpeg" alt="Monument Lineup for Inspection">
+                        <div class="gallery-overlay"><span>Monument Lineup for Inspection</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.09 (2).jpeg" alt="Dimensional Verification on Granite Piece">
+                        <div class="gallery-overlay"><span>Dimensional Verification</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.09.jpeg" alt="Five Monuments Ready for QC">
+                        <div class="gallery-overlay"><span>Monuments Ready for Sign-Off</span></div>
+                    </div>
+                    <div class="gallery-item tall">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.10 (2).jpeg" alt="Stone Wrapped in Bubble Wrap Inspection">
+                        <div class="gallery-overlay"><span>Pre-Pack Surface Inspection</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.06 (3).jpeg" alt="Wide QC Floor View">
+                        <div class="gallery-overlay"><span>Quality Control Floor — Overview</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote -->
+        <section class="qc-quote-banner">
+            <div class="container">
+                <blockquote>"Every piece that carries the Dharakrafts name must be perfect. Quality is our promise — not our policy."</blockquote>
+                <p>— Quality Control Team, Dharakrafts International</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col"><h4>Head Office</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p><p><i class="fa-solid fa-phone"></i> +91 94140 43945</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>Factory</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> 1C3 Kondapanayanpalli (Vill), SDP Industrial Area, Krishnagiri, Tamil Nadu</p><p><i class="fa-solid fa-phone"></i> +91 94140 43945</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>UK Contact</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p><p><i class="fa-solid fa-phone"></i> +44 7436 710266</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+        </div>
+    </footer>
+    <div class="copyright-bar">
+        <div class="container copyright-inner">
+            <div class="copy-text">&copy; 2026 Dharakrafts International. All Rights Reserved.</div>
+            <div class="copy-links"><a href="#">Privacy Policy</a><a href="#">Disclaimer</a><a href="faq.html">FAQ's</a><a href="#">Sitemap</a></div>
+        </div>
+    </div>
+    <a href="https://wa.me/919414043945" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+    <script src="js/main.js?v=29"></script>
+</body>
+</html>

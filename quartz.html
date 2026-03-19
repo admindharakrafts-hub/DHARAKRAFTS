@@ -22,20 +22,35 @@
             <nav class="desktop-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Company</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="directors-message.html">Director's Message</a></li>
+                            <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
                         <a href="index.html#products" class="active">Products <i class="fa-solid fa-chevron-down nav-icon"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="granite.html">Granite</a></li>
                             <li><a href="marble.html">Marble</a></li>
                             <li><a href="sandstone.html">Sandstone</a></li>
+                            <li><a href="slate.html">Slate</a></li>
                             <li><a href="pebbles.html">Pebbles</a></li>
                             <li><a href="quartz.html" class="active">Quartz</a></li>
                             <li><a href="monuments.html">Monuments</a></li>
                             <li><a href="statues.html">Statues</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#infrastructure">Infrastructure</a></li>
+                    <li class="dropdown">
+                        <a href="infrastructure-factory.html">Infrastructure <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="infrastructure-factory.html">Factory</a></li>
+                            <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                            <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                        </ul>
+                    </li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -52,20 +67,35 @@
         </div>
         <ul class="mobile-nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Company</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Company <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="directors-message.html">Director's Message</a></li>
+                    <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                </ul>
+            </li>
             <li>
                 <div class="mobile-dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></div>
                 <ul class="mobile-dropdown-menu">
             <li><a href="granite.html">Granite</a></li>
             <li><a href="marble.html">Marble</a></li>
             <li><a href="sandstone.html">Sandstone</a></li>
+                            <li><a href="slate.html">Slate</a></li>
             <li><a href="pebbles.html">Pebbles</a></li>
             <li><a href="quartz.html">Quartz</a></li>
             <li><a href="monuments.html">Monuments</a></li>
             <li><a href="statues.html">Statues</a></li>
                 </ul>
             </li>
-            <li><a href="index.html#infrastructure">Infrastructure</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Infrastructure <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="infrastructure-factory.html">Factory</a></li>
+                    <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                    <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                </ul>
+            </li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -94,167 +124,158 @@
                 <div class="divider"></div>
                 <p class="text-center section-subtitle" style="margin-bottom:2rem;">20 varieties available. Click on any product to view detailed specifications.</p>
                 <div class="product-grid">
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">B</div></div>
+                    <a href="product-borghini-white-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/borghini-white-quartz.jpg" alt="Borghini White Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Borghini White Quartz</h3>
-                            <p>Mirroring the timeless design of Calacatta Marble, Calacatta Borghini Quartz captivates through its white undertones with grey, charcoal and brown veins.. Quartz has a non-porous surface that resists </p>
-                            <a href="product-borghini-white-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-angola-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-angola-quartz.jpg" alt="Calacatta Angola Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Angola Quartz</h3>
-                            <p>Calacatta Angola Quartz features a soft white background and soft brown veins reminiscent of natural marble.. We are one of India&#x27;s prominent producers, manufacturers and exporters of Calacatta Angola</p>
-                            <a href="product-calacatta-angola-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-classic-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-classic-quartz.jpg" alt="Calacatta Classic Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Classic Quartz</h3>
-                            <p>Offering Calacatta Classic Quartz, an elegant and subtle reinterpretation of the desirable Calacatta Classic Quartz.. It stands out for its uniform greyish veins that cross the neutral background with</p>
-                            <a href="product-calacatta-classic-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-muses-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-muses-quartz.jpg" alt="Calacatta Muses Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Muses Quartz</h3>
-                            <p>Calacatta Muses Quartz is distinctive with its thick, bold veining.. Rather than the plentiful soft veins of a Quartz like Carrara, Calacatta’s hallmark is fewer but more dramatic and unstructured vei</p>
-                            <a href="product-calacatta-muses-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-noble-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-noble-quartz.jpg" alt="Calacatta Noble Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Noble Quartz</h3>
-                            <p>Offering Calacatta Noble Quartz, it is a white quartz stone with opulent grey veins.. The beauty of the purest white contrasts with dark, sinuous veins, giving rise to an elegance and luminosity like </p>
-                            <a href="product-calacatta-noble-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-nuvo-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-nuvo-quartz.jpg" alt="Calacatta Nuvo Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Nuvo Quartz</h3>
-                            <p>Offering Calacatta Nuvo Quartz, it is a white quartz stone with opulent grey veins.. Quartz has a non-porous surface that resists the growth of mold and bacteria and prevents staining, scratching, aci</p>
-                            <a href="product-calacatta-nuvo-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-ocean-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-ocean-quartz.jpg" alt="Calacatta Ocean Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Ocean Quartz</h3>
-                            <p>Exquisite and unique Calacatta Ocean Quartz stuns the senses with its clean whites and striking through-body veining.. We are one of India&#x27;s prominent producers, manufacturers and exporters of Calacat</p>
-                            <a href="product-calacatta-ocean-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-pearl-white-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-pearl-white-quartz.jpg" alt="Calacatta Pearl White Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Pearl White Quartz</h3>
-                            <p>We are one of India&#x27;s prominent producers, manufacturers and exporters of Calacatta Pearl White Quartz.. At the rock bottom prices of our granite factory in India, we will supply good quality Calacatt</p>
-                            <a href="product-calacatta-pearl-white-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-sahara-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-sahara-quartz.jpg" alt="Calacatta Sahara Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Sahara Quartz</h3>
-                            <p>Quartz has a non-porous surface that resists the growth of mold and bacteria and prevents staining, scratching, acids, and impacts.. Quartz Stone is stronger than most of the natural stone products an</p>
-                            <a href="product-calacatta-sahara-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-sky-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-sky-quartz.jpg" alt="Calacatta Sky Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Sky Quartz</h3>
-                            <p>We are one of India&#x27;s prominent producers, manufacturers and exporters of Calacatta Sky Quartz.. At the rock bottom prices of our granite factory in India, we will supply good quality Calacatta Sky Qu</p>
-                            <a href="product-calacatta-sky-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-statuario-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-statuario-quartz.jpg" alt="Calacatta Statuario Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Statuario Quartz</h3>
-                            <p>Quartz has a non-porous surface that resists the growth of mold and bacteria and prevents staining, scratching, acids, and impacts.. Quartz Stone is stronger than most of the natural stone products an</p>
-                            <a href="product-calacatta-statuario-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-unique-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-unique-quartz.jpg" alt="Calacatta Unique Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Unique Quartz</h3>
-                            <p>The beauty of the purest white contrasts with dark, sinuous veins, giving rise to an elegance and luminosity like never before.. This is how we transform empty, silent spaces into unforgettable, livin</p>
-                            <a href="product-calacatta-unique-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calacatta-venice-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-venice-quartz.jpg" alt="Calacatta Venice Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calacatta Venice Quartz</h3>
-                            <p>Calacatta Venice Quartz features a warm white background with subtle broad veining that replicates the sought-after look of Italian marble.. Ready to harmonize with nearly any color scheme or design s</p>
-                            <a href="product-calacatta-venice-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-calcutta-raphael-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/calcutta-raphael-quartz.jpg" alt="Calcutta Raphael Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Calcutta Raphael Quartz</h3>
-                            <p>Quartz has a non-porous surface that resists the growth of mold and bacteria and prevents staining, scratching, acids, and impacts.. Quartz Stone is stronger than most of the natural stone products an</p>
-                            <a href="product-calcutta-raphael-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-carrara-alaska-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/carrara-alaska-quartz.jpg" alt="Carrara Alaska Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Carrara Alaska Quartz</h3>
-                            <p>Offering Carrara Alaska Quartz, it is a manmade product consisting of crushed stone bound together by an adhesive.. We are the global suppliers of countertops, kitchen countertops, marble countertops,</p>
-                            <a href="product-carrara-alaska-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-carrara-bianco-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/carrara-bianco-quartz.jpg" alt="Carrara Bianco Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Carrara Bianco Quartz</h3>
-                            <p>Quartz has a non-porous surface that resists the growth of mold and bacteria and prevents staining, scratching, acids, and impacts.. Quartz Stone is stronger than most of the natural stone products an</p>
-                            <a href="product-carrara-bianco-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-carrara-cloud-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/carrara-cloud-quartz.jpg" alt="Carrara Cloud Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Carrara Cloud Quartz</h3>
-                            <p>Carrara Cloud Quartz has a soft white background with hazy clouds that gives an extraordinary look coordinating with a wide palette of colours and variety of designs.. Quartz has a non-porous surface </p>
-                            <a href="product-carrara-cloud-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-carrara-white-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/carrara-white-quartz.jpg" alt="Carrara White Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Carrara White Quartz</h3>
-                            <p>We are one of India&#x27;s prominent producers, manufacturers and exporters of Carrara White Quartz.. At the rock bottom prices of our granite factory in India, we will supply good quality Carrara White Qu</p>
-                            <a href="product-carrara-white-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">C</div></div>
+</div>
+                    </a>
+                    <a href="product-crystal-white-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/crystal-white-quartz.jpg" alt="Crystal White Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Crystal White Quartz</h3>
-                            <p>Milk quartz or Milky quartz is the most common variety of crystalline quartz.. The white color is caused by minute fluid inclusions of gas, liquid, or both, trapped during crystal formation, making it</p>
-                            <a href="product-crystal-white-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="img-wrapper"><div class="product-placeholder">E</div></div>
+</div>
+                    </a>
+                    <a href="product-engineered-calacatta-quartz.html" class="product-card">
+                        <div class="img-wrapper"><img src="assets/images/products/engineered-calacatta-quartz.jpg" alt="Engineered Calacatta Quartz" style="width:100%; height:100%; object-fit:cover;"></div>
                         <div class="product-info">
                             <h3>Engineered Calacatta Quartz</h3>
-                            <p>Offering Engineered Calacatta Quartz, it is a manmade product consisting of crushed stone bound together by an adhesive.. We are the global suppliers of countertops, kitchen countertops, marble counte</p>
-                            <a href="product-engineered-calacatta-quartz.html" class="btn-sm">View Details</a>
-                        </div>
-                    </div>
+</div>
+                    </a>
                 </div>
+            </div>
+        </section>
+        <section class="section" style="padding-bottom: 0;">
+            <div class="container" style="max-width: 960px;">
+                <h2 style="font-size:1.6rem; margin-bottom:1.2rem;">Premium Engineered Quartz Manufacturer & Exporter</h2>
+                <p>Dharakrafts International offers a stunning range of premium engineered quartz surfaces. Our quartz collection features marble-inspired designs — from Calacatta and Carrara patterns to pure white and custom colour options. Engineered quartz combines the beauty of natural marble with superior scratch resistance, stain resistance, and zero maintenance.</p>
+                <p>Our quartz surfaces are manufactured using advanced Breton technology, combining 93% natural quartz crystals with premium resins and pigments. The result is a non-porous, hygienic surface that is perfect for kitchen countertops, bathroom vanities, bar tops, commercial surfaces, and wall cladding.</p>
+
+                <h3 style="font-size:1.3rem; margin-top:2.5rem; margin-bottom:1rem;">All Popular Quartz Designs Under One Roof</h3>
+                <p>We provide an extensive range of marble-look quartz designs including Calacatta Statuario, Calacatta Classic, Calacatta Noble, Calacatta Venice, Calacatta Ocean, Calacatta Sky, Carrara White, Carrara Bianco, Carrara Cloud, Carrara Alaska, Crystal White, Borghini White, Calcutta Raphael, and many more. Each design is available in jumbo slab format.</p>
+
+                <h3 style="font-size:1.3rem; margin-top:2.5rem; margin-bottom:1rem;">Why Import Engineered Quartz From Us?</h3>
+                <p>Engineered quartz offers significant advantages over natural marble — it is non-porous, scratch-resistant, stain-resistant, and requires zero maintenance. Below are reasons to choose Dharakrafts for quartz.</p>
+                <ul style="margin:1rem 0 1.5rem; padding-left:1.5rem; line-height:2;">
+                    <li>Wide range of Calacatta, Carrara, and custom marble-look designs</li>
+                    <li>Non-porous surface — stain, scratch, and heat resistant</li>
+                    <li>Hygienic — bacteria and mould resistant for food preparation areas</li>
+                    <li>Consistent colour and pattern across all slabs</li>
+                    <li>Zero maintenance — no sealing or special cleaning required</li>
+                    <li>Competitive factory-direct pricing for bulk orders</li>
+                    <li>Reliable global shipping with careful slab packaging</li>
+                    <li>Free samples available for design verification</li>
+                </ul>
+
+                <h3 style="font-size:1.3rem; margin-top:2.5rem; margin-bottom:1rem;">Available Quartz Product Sizes</h3>
+                <p><strong>Standard Slab Size:</strong> 305 x 144 CM (10 ft x 4.7 ft) — Jumbo slabs</p>
+                <p><strong>Thickness:</strong> 20mm and 30mm</p>
+                <p><strong>Tiles:</strong> 60 x 30, 60 x 60 CM (custom sizes available)</p>
+                <p><strong>Finishes:</strong> Polished, Honed</p>
+                <p><strong>Composition:</strong> 93% Natural Quartz + 7% Resin & Pigments</p>
+                <p><em>Custom slab sizes and finishes are available on request.</em></p>
             </div>
         </section>
     </main>
@@ -262,13 +283,13 @@
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container footer-grid">
-            <div class="footer-col"><h4>Head Office</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan, India</p><p><i class="fa-solid fa-phone"></i> +91 98765 43210</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
-            <div class="footer-col"><h4>South India Factory</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> Hosur, Tamil Nadu, India</p><p><i class="fa-solid fa-phone"></i> +91 87654 32109</p><p><i class="fa-solid fa-envelope"></i> south@dharakrafts.com</p></div></div>
-            <div class="footer-col"><h4>North India Factory</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> Kishangarh, Rajasthan, India</p><p><i class="fa-solid fa-phone"></i> +91 76543 21098</p><p><i class="fa-solid fa-envelope"></i> north@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>Head Office</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p><p><i class="fa-solid fa-phone"></i> +91 94140 43945</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>Factory</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> 1C3 Kondapanayanpalli (Vill), SDP Industrial Area, Krishnagiri, Tamil Nadu</p><p><i class="fa-solid fa-phone"></i> +91 94140 43945</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>UK Contact</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p><p><i class="fa-solid fa-phone"></i> +44 7436 710266</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
         </div>
     </footer>
     <div class="copyright-bar"><div class="container copyright-inner"><div class="copy-text">&copy; 2026 Dharakrafts International. All Rights Reserved.</div><div class="copy-links"><a href="#">Privacy Policy</a><a href="#">Disclaimer</a><a href="faq.html">FAQ's</a><a href="#">Sitemap</a></div></div></div>
-    <a href="https://wa.me/911234567890" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
-    <script src="js/main.js"></script>
+    <a href="https://wa.me/919414043945" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+    <script src="js/main.js?v=28"></script>
 </body>
 </html>

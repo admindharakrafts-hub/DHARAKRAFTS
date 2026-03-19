@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Director's Message - Dharakrafts International. Our commitment to quality Indian natural stones and global export excellence.">
+    <title>Director's Message | Dharakrafts International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_v2.css">
+    <style>
+        /* ── Director's Message Page Styles ── */
+        .directors-section {
+            padding: 80px 0;
+            background: var(--color-white);
+        }
+        .directors-layout {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 60px;
+            align-items: flex-start;
+        }
+        .director-photo-card {
+            position: sticky;
+            top: 100px;
+            text-align: center;
+        }
+        .director-photo-wrap {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background: linear-gradient(135deg, #f0ead6 0%, #e8dcc8 100%);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 4px solid var(--color-primary-gold);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .director-photo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .director-photo-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            color: var(--color-primary-gold);
+        }
+        .director-photo-placeholder i {
+            font-size: 5rem;
+            opacity: 0.6;
+        }
+        .director-name-card {
+            background: var(--color-bg-dark);
+            color: var(--color-white);
+            padding: 18px 20px;
+            border-radius: 6px;
+        }
+        .director-name-card h3 {
+            font-family: var(--font-heading);
+            color: var(--color-primary-gold);
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+        }
+        .director-name-card p {
+            font-size: 0.85rem;
+            color: #ccc;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .director-message-content h2 {
+            font-size: 2.2rem;
+            color: var(--color-bg-dark);
+            margin-bottom: 8px;
+        }
+        .director-message-content .divider {
+            margin: 1.5rem 0;
+        }
+        .message-quote {
+            background: linear-gradient(135deg, #fdf8ee 0%, #faf4e4 100%);
+            border-left: 5px solid var(--color-primary-gold);
+            padding: 24px 28px;
+            margin: 28px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .message-quote p {
+            font-family: var(--font-accent);
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--color-bg-dark);
+            line-height: 1.7;
+        }
+        .director-message-content p {
+            color: var(--color-text-muted);
+            line-height: 1.9;
+            margin-bottom: 18px;
+            font-size: 1rem;
+        }
+        .director-message-content h3 {
+            font-size: 1.3rem;
+            color: var(--color-bg-dark);
+            margin: 32px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0e8cc;
+        }
+        .director-signature {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .signature-line {
+            flex: 1;
+        }
+        .signature-line p {
+            margin: 0;
+            color: var(--color-text-dark);
+        }
+        .signature-line .sig-name {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            color: var(--color-bg-dark);
+            font-weight: 700;
+        }
+        .signature-line .sig-title {
+            color: var(--color-primary-gold);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 4px;
+        }
+        .sig-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--color-primary-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+        /* Values strip */
+        .values-strip {
+            background: var(--color-bg-dark);
+            padding: 50px 0;
+        }
+        .values-strip-inner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+        .value-item i {
+            color: var(--color-primary-gold);
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        .value-item h4 {
+            color: var(--color-white);
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+        .value-item p {
+            color: #aaa;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        @media (max-width: 900px) {
+            .directors-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .director-photo-card {
+                position: static;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            .values-strip-inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .values-strip-inner {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-contact">
+                <a href="mailto:info@dharakrafts.com"><i class="fa-solid fa-envelope"></i> Get Quote Now</a>
+            </div>
+            <div class="top-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bold">Dharakrafts</span>
+                <span class="logo-light">International</span>
+            </a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html" class="active">Company <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="directors-message.html" class="active">Director's Message</a></li>
+                            <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html#products">Products <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="granite.html">Granite</a></li>
+                            <li><a href="marble.html">Marble</a></li>
+                            <li><a href="sandstone.html">Sandstone</a></li>
+                            <li><a href="slate.html">Slate</a></li>
+                            <li><a href="pebbles.html">Pebbles</a></li>
+                            <li><a href="quartz.html">Quartz</a></li>
+                            <li><a href="monuments.html">Monuments</a></li>
+                            <li><a href="statues.html">Statues</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="infrastructure-factory.html">Infrastructure <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="infrastructure-factory.html">Factory</a></li>
+                            <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                            <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <div class="mobile-nav-header">
+            <span class="logo-bold" style="color:#B8860B">Dharakrafts</span>
+            <button class="mobile-menu-close" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Company <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="directors-message.html">Director's Message</a></li>
+                    <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="mobile-dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="marble.html">Marble</a></li>
+                    <li><a href="sandstone.html">Sandstone</a></li>
+                    <li><a href="slate.html">Slate</a></li>
+                    <li><a href="pebbles.html">Pebbles</a></li>
+                    <li><a href="quartz.html">Quartz</a></li>
+                    <li><a href="monuments.html">Monuments</a></li>
+                    <li><a href="statues.html">Statues</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="mobile-dropdown-toggle">Infrastructure <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="infrastructure-factory.html">Factory</a></li>
+                    <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                    <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner" style="background: linear-gradient(135deg, #1A1A1A 0%, #2c2c2c 100%);">
+            <div class="page-banner-overlay" style="background: rgba(0,0,0,0.45);"></div>
+            <div class="container page-banner-content">
+                <h1>Director's Message</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a> / <a href="about.html">Company</a> / <span>Director's Message</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Director's Message -->
+        <section class="directors-section">
+            <div class="container directors-layout">
+
+                <!-- Left: Photo Card -->
+                <div class="director-photo-card">
+                    <div class="director-photo-wrap">
+                        <div class="director-photo-placeholder">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span style="font-size:0.85rem; font-family: var(--font-body);">Director</span>
+                        </div>
+                    </div>
+                    <div class="director-name-card">
+                        <h3>Mr. Mohit Lamba</h3>
+                        <p>Managing Director</p>
+                    </div>
+                </div>
+
+                <!-- Right: Message -->
+                <div class="director-message-content">
+                    <h2>A Message From Our Director</h2>
+                    <div class="divider"></div>
+
+                    <div class="message-quote">
+                        <p>"We don't just export stone — we export trust, craftsmanship, and the rich geological heritage of India. Every slab that carries the Dharakrafts name carries my personal guarantee of quality."</p>
+                    </div>
+
+                    <p>Dear valued clients, partners, and friends,</p>
+
+                    <p>It gives me immense pleasure to welcome you to Dharakrafts International. What began as a vision to bring the finest Indian natural stones to the global market has grown into a company that today serves architects, builders, landscapers, and interior designers across more than 30 countries — from the United States and the United Kingdom to Europe, the Middle East, Australia, and beyond.</p>
+
+                    <p>I grew up surrounded by stone. Jaipur, our home city, sits at the heart of one of the world's richest natural stone belts, and Rajasthan alone accounts for a significant share of India's total stone production. It was this environment that instilled in me a deep respect for the raw material we work with and an understanding that every block pulled from the earth carries millions of years of geological history. Our job is simply to shape that history into something beautiful, functional, and enduring.</p>
+
+                    <h3>From Quarry to Container — Complete Vertical Integration</h3>
+
+                    <p>What sets Dharakrafts apart is our end-to-end control over the entire value chain. We maintain direct relationships with quarry owners in Rajasthan and operate our own state-of-the-art processing facility in Krishnagiri, Tamil Nadu — strategically located to serve both northern and southern quarry belts. This vertical integration allows us to eliminate middlemen, control quality at every stage, and pass genuine cost advantages on to our clients without ever compromising on grade or finish.</p>
+
+                    <p>From the moment a raw block arrives at our factory gate to the final container being sealed at the port, every step is overseen by our experienced team: cutting on automatic gang-saws, surface finishing on CNC lines, dimensional verification by our quality controllers, protective packaging in export-grade wooden crates, and container loading under supervision. Nothing is left to chance.</p>
+
+                    <h3>Craftsmanship Meets Modern Precision</h3>
+
+                    <p>India's stone-crafting tradition stretches back centuries — from the marble marvels of Rajasthan to the granite temples of South India. At Dharakrafts, we honour that heritage while embracing modern technology. Our factory floor houses CNC profiling machines, bridge saws, and automatic polishing lines working alongside master craftsmen who hand-carve monuments, statues, and decorative pieces with a skill that no machine can replicate. This marriage of old-world artistry and new-world precision is our signature.</p>
+
+                    <h3>A Global Vision, Rooted in India</h3>
+
+                    <p>We are proud to serve a truly international clientele. Our UK contact line ensures that European clients can reach us during their business hours, while our India operations run around the clock to fulfil orders for markets across every time zone. Whether you are sourcing polished granite countertops for a residential project in London, sandstone cladding for a commercial development in New York, or custom-carved marble statues for a temple in Melbourne, we have the expertise, the inventory, and the logistics network to deliver.</p>
+
+                    <h3>Sustainability &amp; Responsibility</h3>
+
+                    <p>As someone who has spent his career working with the gifts of the earth, I take the responsibility of sustainable extraction seriously. Dharakrafts is committed to ethical quarrying practices, fair labour policies, zero tolerance for child labour, and responsible waste management at all our facilities. We believe that the natural beauty of India's stone heritage must be preserved for generations to come, and we conduct our business accordingly.</p>
+
+                    <h3>An Invitation</h3>
+
+                    <p>Whether you are a first-time buyer exploring Indian natural stone or a long-standing partner, I invite you to experience the Dharakrafts difference. Reach out to us for samples, visit our factory in Tamil Nadu, or simply call our team to discuss your project requirements. We are here to help you find the perfect stone — and to ensure it reaches you on time, on budget, and exactly as promised.</p>
+
+                    <p>Thank you for your trust and your business. We look forward to building something enduring together.</p>
+
+                    <p>Warm regards,</p>
+
+                    <div class="director-signature">
+                        <div class="sig-icon">
+                            <i class="fa-solid fa-signature"></i>
+                        </div>
+                        <div class="signature-line">
+                            <p class="sig-name">Mr. Mohit Lamba</p>
+                            <p class="sig-title">Managing Director, Dharakrafts International</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Strip -->
+        <section class="values-strip">
+            <div class="container values-strip-inner">
+                <div class="value-item">
+                    <i class="fa-solid fa-gem"></i>
+                    <h4>Premium Quality</h4>
+                    <p>Direct quarry sourcing with rigorous quality checks at every stage.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Global Reach</h4>
+                    <p>Trusted by clients in 30+ countries across 6 continents.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h4>Fair Trade</h4>
+                    <p>Transparent pricing, honest dealings, and long-term partnerships.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h4>Responsible Sourcing</h4>
+                    <p>Committed to ethical and sustainable stone extraction practices.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Head Office</h4>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 94140 43945</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Factory</h4>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> 1C3 Kondapanayanpalli (Vill), SDP Industrial Area, Krishnagiri, Tamil Nadu</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 94140 43945</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>UK Contact</h4>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p>
+                    <p><i class="fa-solid fa-phone"></i> +44 7436 710266</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-bar">
+        <div class="container copyright-inner">
+            <div class="copy-text">&copy; 2026 Dharakrafts International. All Rights Reserved.</div>
+            <div class="copy-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Disclaimer</a>
+                <a href="faq.html">FAQ's</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/919414043945" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <script src="js/main.js?v=29"></script>
+</body>
+</html>

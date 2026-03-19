@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corporate Social Responsibility - Dharakrafts International's commitment to ethical sourcing, fair labour, and sustainable stone manufacturing.">
+    <title>Corporate Social Responsibility | Dharakrafts International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_v2.css">
+    <style>
+        /* ── CSR Page Styles ── */
+        .csr-intro-section {
+            padding: 70px 0 40px;
+            background: var(--color-white);
+            text-align: center;
+        }
+        .csr-intro-section .section-title {
+            font-size: 2.2rem;
+        }
+        .csr-intro-quote {
+            max-width: 820px;
+            margin: 30px auto 0;
+            background: linear-gradient(135deg, #fdf8ee 0%, #faf4e4 100%);
+            border-left: 5px solid var(--color-primary-gold);
+            padding: 26px 32px;
+            border-radius: 0 8px 8px 0;
+            text-align: left;
+        }
+        .csr-intro-quote p {
+            font-family: var(--font-accent);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--color-bg-dark);
+            line-height: 1.8;
+        }
+        /* CSR Pillars Grid */
+        .csr-pillars-section {
+            padding: 60px 0 80px;
+            background: var(--color-bg-light);
+        }
+        .csr-pillars-section .section-title {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .csr-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin-top: 50px;
+        }
+        .csr-card {
+            background: var(--color-white);
+            border-radius: 10px;
+            padding: 36px 32px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-top: 4px solid var(--color-primary-gold);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .csr-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 32px rgba(0,0,0,0.1);
+        }
+        .csr-card-header {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 20px;
+        }
+        .csr-icon-wrap {
+            width: 58px;
+            height: 58px;
+            background: linear-gradient(135deg, var(--color-primary-gold) 0%, #d4a017 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .csr-icon-wrap i {
+            color: var(--color-white);
+            font-size: 1.4rem;
+        }
+        .csr-card-header h3 {
+            font-size: 1.15rem;
+            color: var(--color-bg-dark);
+            line-height: 1.3;
+        }
+        .csr-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .csr-card ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: var(--color-text-muted);
+            font-size: 0.92rem;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        .csr-card ul li:last-child {
+            margin-bottom: 0;
+        }
+        .csr-card ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--color-primary-gold);
+            font-size: 0.75rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        /* Commitment Banner */
+        .csr-commitment-banner {
+            background: var(--color-bg-dark);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .csr-commitment-banner h2 {
+            color: var(--color-white);
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+        }
+        .csr-commitment-banner p {
+            color: #bbb;
+            max-width: 680px;
+            margin: 0 auto 32px;
+            line-height: 1.8;
+        }
+        .csr-commitment-banner .btn-gold {
+            display: inline-block;
+            background: var(--color-primary-gold);
+            color: var(--color-white);
+            padding: 14px 36px;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: background 0.3s ease;
+        }
+        .csr-commitment-banner .btn-gold:hover {
+            background: #9a6f09;
+        }
+        /* Stats row */
+        .csr-stats {
+            background: var(--color-white);
+            padding: 50px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .csr-stats-inner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .stat-item h3 {
+            font-size: 2.4rem;
+            color: var(--color-primary-gold);
+            font-family: var(--font-heading);
+        }
+        .stat-item p {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+        @media (max-width: 900px) {
+            .csr-grid {
+                grid-template-columns: 1fr;
+            }
+            .csr-stats-inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .csr-stats-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-contact">
+                <a href="mailto:info@dharakrafts.com"><i class="fa-solid fa-envelope"></i> Get Quote Now</a>
+            </div>
+            <div class="top-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bold">Dharakrafts</span>
+                <span class="logo-light">International</span>
+            </a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html" class="active">Company <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="directors-message.html">Director's Message</a></li>
+                            <li><a href="csr.html" class="active">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html#products">Products <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="granite.html">Granite</a></li>
+                            <li><a href="marble.html">Marble</a></li>
+                            <li><a href="sandstone.html">Sandstone</a></li>
+                            <li><a href="slate.html">Slate</a></li>
+                            <li><a href="pebbles.html">Pebbles</a></li>
+                            <li><a href="quartz.html">Quartz</a></li>
+                            <li><a href="monuments.html">Monuments</a></li>
+                            <li><a href="statues.html">Statues</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="infrastructure-factory.html">Infrastructure <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="infrastructure-factory.html">Factory</a></li>
+                            <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                            <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <div class="mobile-nav-header">
+            <span class="logo-bold" style="color:#B8860B">Dharakrafts</span>
+            <button class="mobile-menu-close" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Company <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="directors-message.html">Director's Message</a></li>
+                    <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="mobile-dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="marble.html">Marble</a></li>
+                    <li><a href="sandstone.html">Sandstone</a></li>
+                    <li><a href="slate.html">Slate</a></li>
+                    <li><a href="pebbles.html">Pebbles</a></li>
+                    <li><a href="quartz.html">Quartz</a></li>
+                    <li><a href="monuments.html">Monuments</a></li>
+                    <li><a href="statues.html">Statues</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="mobile-dropdown-toggle">Infrastructure <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="infrastructure-factory.html">Factory</a></li>
+                    <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                    <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner" style="background: linear-gradient(135deg, #1A1A1A 0%, #2c2c2c 100%);">
+            <div class="page-banner-overlay" style="background: rgba(0,0,0,0.45);"></div>
+            <div class="container page-banner-content">
+                <h1>Corporate Social Responsibility</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a> / <a href="about.html">Company</a> / <span>CSR</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section class="csr-intro-section">
+            <div class="container">
+                <h2 class="section-title">Our Commitment to People &amp; Planet</h2>
+                <div class="divider"></div>
+                <div class="csr-intro-quote">
+                    <p>"At Dharakrafts International, we approach Corporate Social Responsibility strategically — in order to ensure a sustainable future for our workers, our communities, our customers, and our company."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="csr-stats">
+            <div class="container csr-stats-inner">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Workers employed with fair wages</p>
+                </div>
+                <div class="stat-item">
+                    <h3>0</h3>
+                    <p>Tolerance for child or forced labour</p>
+                </div>
+                <div class="stat-item">
+                    <h3>30+</h3>
+                    <p>Countries served with ethical stone</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Suppliers vetted for compliance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CSR Pillars -->
+        <section class="csr-pillars-section">
+            <div class="container">
+                <h2 class="section-title">Our CSR Commitments</h2>
+                <div class="divider" style="margin: 1rem auto 0;"></div>
+
+                <div class="csr-grid">
+
+                    <!-- 1 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-child-reaching"></i></div>
+                            <h3>No Child Labour</h3>
+                        </div>
+                        <ul>
+                            <li>Full compliance with Rajasthan and Tamil Nadu child labour laws.</li>
+                            <li>Strict minimum age policy of 18 years for all factory and quarry roles.</li>
+                            <li>Explicit prohibition of child labour enforced across all supplier and sub-contractor relationships.</li>
+                            <li>Regular audits to verify compliance at every level of our supply chain.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-person-walking-arrow-right"></i></div>
+                            <h3>No Forced Labour</h3>
+                        </div>
+                        <ul>
+                            <li>Every employee retains the absolute right to terminate employment without penalty.</li>
+                            <li>No deposit or document retention schemes are used in our hiring process.</li>
+                            <li>Transparent employment contracts provided in the worker's native language.</li>
+                            <li>No bonded labour or coercive working conditions are tolerated under any circumstance.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-hard-hat"></i></div>
+                            <h3>Health &amp; Safety</h3>
+                        </div>
+                        <ul>
+                            <li>Provision of PPE (masks, gloves, goggles, safety boots) to all factory staff at no cost.</li>
+                            <li>Clean filtered drinking water and sanitary facilities available at all sites.</li>
+                            <li>Annual health check-ups provided for all permanent employees.</li>
+                            <li>Emergency first-aid systems and trained safety personnel on-site at all times.</li>
+                            <li>Silica dust exposure controls strictly enforced at all cutting and polishing units.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-people-group"></i></div>
+                            <h3>Freedom of Association</h3>
+                        </div>
+                        <ul>
+                            <li>Employees are free to associate, organise, and collectively bargain without interference.</li>
+                            <li>Worker representatives participate in management discussions on workplace matters.</li>
+                            <li>Clear grievance redressal mechanisms available to every employee.</li>
+                            <li>No retaliation against workers who raise concerns in good faith.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <h3>Non-Discrimination</h3>
+                        </div>
+                        <ul>
+                            <li>Equal employment opportunity regardless of race, caste, religion, gender, or disability.</li>
+                            <li>Zero tolerance for workplace harassment, bullying, or discriminatory conduct.</li>
+                            <li>Hiring and promotion decisions are based solely on merit and qualifications.</li>
+                            <li>Women constitute a significant portion of our skilled workforce in finishing units.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-gavel"></i></div>
+                            <h3>Disciplinary Practices</h3>
+                        </div>
+                        <ul>
+                            <li>All disciplinary procedures adhere to the Industrial Disputes Act of India.</li>
+                            <li>Absolute prohibition of corporal punishment, verbal abuse, and harsh treatment.</li>
+                            <li>Documented disciplinary process with right of reply for all employees.</li>
+                            <li>Management trained in conflict resolution and constructive feedback methods.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-clock"></i></div>
+                            <h3>Reasonable Working Hours</h3>
+                        </div>
+                        <ul>
+                            <li>Standard working week of 48 hours with defined lunch and rest breaks.</li>
+                            <li>Overtime is voluntary, compensated at premium rates, and capped at legal limits.</li>
+                            <li>Annual earned leave, casual leave, and paid public holidays provided to all staff.</li>
+                            <li>Night shift workers receive additional allowances and priority health screenings.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                            <h3>Fair Remuneration</h3>
+                        </div>
+                        <ul>
+                            <li>All wages meet or exceed state minimum wage thresholds for skilled and unskilled labour.</li>
+                            <li>Salary structures are transparent and communicated clearly to every employee.</li>
+                            <li>Annual performance appraisals with merit-based increments and incentives.</li>
+                            <li>Provident Fund (PF) and ESI contributions made on time for all eligible workers.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-sitemap"></i></div>
+                            <h3>Management Systems</h3>
+                        </div>
+                        <ul>
+                            <li>Dedicated senior management representatives oversee CSR and compliance programmes.</li>
+                            <li>Health &amp; Safety coordinators appointed at each manufacturing facility.</li>
+                            <li>Regular internal audits and third-party inspections of working conditions.</li>
+                            <li>CSR policies reviewed annually and updated to reflect changing regulations and best practices.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="csr-card">
+                        <div class="csr-card-header">
+                            <div class="csr-icon-wrap"><i class="fa-solid fa-truck-field"></i></div>
+                            <h3>Supplier &amp; Contractor Control</h3>
+                        </div>
+                        <ul>
+                            <li>All quarry partners and sub-contractors are vetted against our CSR standards before engagement.</li>
+                            <li>Supplier contracts include binding social compliance clauses.</li>
+                            <li>Periodic on-site visits conducted at key quarry and processing partner sites.</li>
+                            <li>Non-compliant suppliers are given corrective action timelines or are delisted.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Commitment Banner -->
+        <section class="csr-commitment-banner">
+            <div class="container">
+                <h2>Together, We Build Responsibly</h2>
+                <p>Our CSR commitments are not just policy documents — they are the foundation of how we operate every single day. When you source from Dharakrafts, you source from a partner that cares about people and the planet as much as it cares about quality stone.</p>
+                <a href="contact.html" class="btn-gold">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Head Office</h4>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 94140 43945</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Factory</h4>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> 1C3 Kondapanayanpalli (Vill), SDP Industrial Area, Krishnagiri, Tamil Nadu</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 94140 43945</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>UK Contact</h4>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p>
+                    <p><i class="fa-solid fa-phone"></i> +44 7436 710266</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-bar">
+        <div class="container copyright-inner">
+            <div class="copy-text">&copy; 2026 Dharakrafts International. All Rights Reserved.</div>
+            <div class="copy-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Disclaimer</a>
+                <a href="faq.html">FAQ's</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/919414043945" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <script src="js/main.js?v=29"></script>
+</body>
+</html>

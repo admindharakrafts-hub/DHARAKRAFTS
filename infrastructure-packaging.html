@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Packaging Unit at Dharakrafts International - Export-grade wooden crating, foam padding and container loading for safe delivery of natural stone worldwide.">
+    <title>Packaging Unit | Dharakrafts International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_v2.css">
+    <style>
+        .infra-intro { padding: 70px 0 50px; background: var(--color-white); }
+        .infra-intro-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .infra-intro-text h2 { font-size: 2rem; margin-bottom: 8px; }
+        .infra-intro-text p { color: var(--color-text-muted); line-height: 1.9; margin-bottom: 16px; }
+        .infra-intro-img { border-radius: 10px; overflow: hidden; height: 420px; }
+        .infra-intro-img img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Packaging types */
+        .pack-types { padding: 60px 0; background: var(--color-bg-light); }
+        .pack-types-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 40px; }
+        .pack-card { background: var(--color-white); border-radius: 10px; overflow: hidden; box-shadow: 0 4px 18px rgba(0,0,0,0.07); display: flex; flex-direction: column; }
+        .pack-card-img { height: 240px; overflow: hidden; }
+        .pack-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .pack-card:hover .pack-card-img img { transform: scale(1.05); }
+        .pack-card-body { padding: 26px 24px; flex: 1; }
+        .pack-card-body h3 { font-size: 1.1rem; color: var(--color-bg-dark); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        .pack-card-body h3 i { color: var(--color-primary-gold); font-size: 1rem; }
+        .pack-card-body p { color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.75; }
+        .pack-card-body ul { list-style: none; margin-top: 12px; }
+        .pack-card-body ul li { color: var(--color-text-muted); font-size: 0.88rem; padding: 4px 0; display: flex; gap: 8px; align-items: flex-start; }
+        .pack-card-body ul li::before { content: '\f058'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: var(--color-primary-gold); font-size: 0.75rem; margin-top: 3px; flex-shrink: 0; }
+
+        /* Gallery */
+        .gallery-section { padding: 60px 0 80px; background: var(--color-white); }
+        .gallery-section .section-title { text-align: center; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
+        .gallery-item { border-radius: 8px; overflow: hidden; position: relative; cursor: pointer; background: #111; }
+        .gallery-item img { width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.4s ease, opacity 0.4s ease; }
+        .gallery-item:hover img { transform: scale(1.06); opacity: 0.85; }
+        .gallery-item.tall img { height: 420px; }
+        .gallery-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); padding: 20px 16px 14px; opacity: 0; transition: opacity 0.3s ease; }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay span { color: #fff; font-size: 0.85rem; font-family: var(--font-body); letter-spacing: 0.04em; }
+
+        /* CTA dark strip */
+        .pack-cta { background: var(--color-bg-dark); padding: 55px 0; text-align: center; }
+        .pack-cta h2 { color: var(--color-white); font-size: 1.8rem; margin-bottom: 14px; }
+        .pack-cta p { color: #bbb; max-width: 620px; margin: 0 auto 28px; line-height: 1.8; }
+        .pack-cta .btn-gold { display: inline-block; background: var(--color-primary-gold); color: #fff; padding: 14px 36px; border-radius: 4px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; transition: background 0.3s; }
+        .pack-cta .btn-gold:hover { background: #9a6f09; }
+
+        @media (max-width: 900px) {
+            .infra-intro-layout { grid-template-columns: 1fr; }
+            .pack-types-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 540px) { .gallery-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-contact"><a href="mailto:info@dharakrafts.com"><i class="fa-solid fa-envelope"></i> Get Quote Now</a></div>
+            <div class="top-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><span class="logo-bold">Dharakrafts</span><span class="logo-light">International</span></a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="directors-message.html">Director's Message</a></li>
+                            <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html#products">Products <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="granite.html">Granite</a></li>
+                            <li><a href="marble.html">Marble</a></li>
+                            <li><a href="sandstone.html">Sandstone</a></li>
+                            <li><a href="slate.html">Slate</a></li>
+                            <li><a href="pebbles.html">Pebbles</a></li>
+                            <li><a href="quartz.html">Quartz</a></li>
+                            <li><a href="monuments.html">Monuments</a></li>
+                            <li><a href="statues.html">Statues</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="infrastructure-factory.html" class="active">Infrastructure <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="infrastructure-factory.html">Factory</a></li>
+                            <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                            <li><a href="infrastructure-packaging.html" class="active">Packaging Unit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <div class="mobile-nav-header">
+            <span class="logo-bold" style="color:#B8860B">Dharakrafts</span>
+            <button class="mobile-menu-close" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Company <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="directors-message.html">Director's Message</a></li>
+                    <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="mobile-dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="granite.html">Granite</a></li>
+                    <li><a href="marble.html">Marble</a></li>
+                    <li><a href="sandstone.html">Sandstone</a></li>
+                    <li><a href="slate.html">Slate</a></li>
+                    <li><a href="pebbles.html">Pebbles</a></li>
+                    <li><a href="quartz.html">Quartz</a></li>
+                    <li><a href="monuments.html">Monuments</a></li>
+                    <li><a href="statues.html">Statues</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="mobile-dropdown-toggle">Infrastructure <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="infrastructure-factory.html">Factory</a></li>
+                    <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                    <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="page-banner" style="background: linear-gradient(135deg, #1A1A1A 0%, #2c2c2c 100%);">
+            <div class="page-banner-overlay" style="background:rgba(0,0,0,0.45);"></div>
+            <div class="container page-banner-content">
+                <h1>Packaging Unit</h1>
+                <nav class="breadcrumb"><a href="index.html">Home</a> / <span>Infrastructure</span> / <span>Packaging Unit</span></nav>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section class="infra-intro">
+            <div class="container infra-intro-layout">
+                <div class="infra-intro-text">
+                    <h2 class="section-title">Export-Grade Packaging for Safe Global Delivery</h2>
+                    <div class="divider" style="margin:1.2rem 0;"></div>
+                    <p>The final step before your order leaves our facility is equally as important as the first. Our dedicated packaging unit ensures every stone reaches your destination — whether in the USA, UK, Europe, or Australia — in exactly the same condition it left our factory in. We use export-grade, sea-worthy packaging materials designed to withstand ocean freight conditions.</p>
+                    <p>Slabs and tiles are individually wrapped in foam or bubble wrap, stacked on sturdy wooden pallets, strapped with PP bands, and loaded into numbered wooden crates or bundles. Monuments and statues receive additional foam wrapping, corner guards, and reinforced crating. Container loading is done by trained staff using forklifts to maximise safety and space efficiency.</p>
+                </div>
+                <div class="infra-intro-img">
+                    <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.02.jpeg" alt="Export Packaging — Numbered Wooden Crates">
+                </div>
+            </div>
+        </section>
+
+        <!-- Packaging Types -->
+        <section class="pack-types">
+            <div class="container">
+                <h2 class="section-title" style="text-align:center;">Our Packaging Methods</h2>
+                <div class="divider" style="margin:1rem auto 0;"></div>
+                <div class="pack-types-grid">
+                    <div class="pack-card">
+                        <div class="pack-card-img">
+                            <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.02.jpeg" alt="Wooden Crates">
+                        </div>
+                        <div class="pack-card-body">
+                            <h3><i class="fa-solid fa-box-open"></i> Wooden Crates &amp; Bundles</h3>
+                            <p>Custom-built export-grade wooden crates are used for tiles, slabs, and smaller monument pieces. Each crate is individually numbered and labelled with product details.</p>
+                            <ul>
+                                <li>Sea-worthy, fumigated wood</li>
+                                <li>Individual piece foam-wrapping inside crates</li>
+                                <li>PP strap banding for security</li>
+                                <li>Numbered and labelled for easy identification</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pack-card">
+                        <div class="pack-card-img">
+                            <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.03 (1).jpeg" alt="Container Loading">
+                        </div>
+                        <div class="pack-card-body">
+                            <h3><i class="fa-solid fa-ship"></i> Container Loading</h3>
+                            <p>Packed crates and pallets are loaded into 20ft or 40ft shipping containers by trained staff using forklifts and manual handling equipment, optimised for safe stacking and maximum load efficiency.</p>
+                            <ul>
+                                <li>20ft &amp; 40ft container options</li>
+                                <li>Forklift-assisted loading</li>
+                                <li>Dunnage and airbag stabilisation</li>
+                                <li>Photographic pre-shipment documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pack-card">
+                        <div class="pack-card-img">
+                            <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.03.jpeg" alt="Outdoor Packing Yard">
+                        </div>
+                        <div class="pack-card-body">
+                            <h3><i class="fa-solid fa-warehouse"></i> Outdoor Packing Yard</h3>
+                            <p>Our spacious outdoor packing yard accommodates large-volume orders with staged pallet storage, crate assembly, and strapping — all before container loading begins.</p>
+                            <ul>
+                                <li>Large-volume order capacity</li>
+                                <li>Organised lot-wise pallet staging</li>
+                                <li>Covered storage for weather protection</li>
+                                <li>FIFO dispatch management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pack-card">
+                        <div class="pack-card-img">
+                            <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.14.jpeg" alt="Forklift Loading">
+                        </div>
+                        <div class="pack-card-body">
+                            <h3><i class="fa-solid fa-truck-ramp-box"></i> Forklift &amp; Logistics</h3>
+                            <p>Our yard is equipped with forklifts and pallet jacks to safely handle heavy stone crates from storage to container loading. Trained operators ensure every movement is secure.</p>
+                            <ul>
+                                <li>Electric and diesel forklifts on-site</li>
+                                <li>Safe handling of loads up to 5 tonnes</li>
+                                <li>Coordination with freight forwarders</li>
+                                <li>Full export documentation support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Packaging Gallery</h2>
+                <div class="divider" style="margin:1rem auto 0;"></div>
+                <div class="gallery-grid">
+                    <div class="gallery-item tall">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.02.jpeg" alt="Numbered Wooden Crates Indoor">
+                        <div class="gallery-overlay"><span>Numbered Export Crates — Indoor</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.03.jpeg" alt="Outdoor Packing Yard with Pallets">
+                        <div class="gallery-overlay"><span>Outdoor Packing Yard</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.04 (1).jpeg" alt="Crate Yard with Palm Trees">
+                        <div class="gallery-overlay"><span>Pallet Staging Area</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.14.jpeg" alt="Forklift Loading Container">
+                        <div class="gallery-overlay"><span>Forklift Container Loading</span></div>
+                    </div>
+                    <div class="gallery-item tall">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.03 (1).jpeg" alt="Loaded Shipping Container">
+                        <div class="gallery-overlay"><span>Loaded &amp; Secured Container</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="wearhouse/WhatsApp Image 2026-03-15 at 00.52.03 (2).jpeg" alt="Container Interior with Pallets">
+                        <div class="gallery-overlay"><span>Container Interior — Ready to Ship</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="pack-cta">
+            <div class="container">
+                <h2>Ready to Place an Order?</h2>
+                <p>From factory floor to your doorstep — our end-to-end packaging and logistics support ensures your natural stone arrives safely, on time, every time.</p>
+                <a href="contact.html" class="btn-gold">Request a Quote</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col"><h4>Head Office</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p><p><i class="fa-solid fa-phone"></i> +91 94140 43945</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>Factory</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> 1C3 Kondapanayanpalli (Vill), SDP Industrial Area, Krishnagiri, Tamil Nadu</p><p><i class="fa-solid fa-phone"></i> +91 94140 43945</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>UK Contact</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p><p><i class="fa-solid fa-phone"></i> +44 7436 710266</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+        </div>
+    </footer>
+    <div class="copyright-bar">
+        <div class="container copyright-inner">
+            <div class="copy-text">&copy; 2026 Dharakrafts International. All Rights Reserved.</div>
+            <div class="copy-links"><a href="#">Privacy Policy</a><a href="#">Disclaimer</a><a href="faq.html">FAQ's</a><a href="#">Sitemap</a></div>
+        </div>
+    </div>
+    <a href="https://wa.me/919414043945" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+    <script src="js/main.js?v=29"></script>
+</body>
+</html>

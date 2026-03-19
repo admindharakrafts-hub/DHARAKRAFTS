@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dharakrafts International - Premium Natural Stone Manufacturer & Exporter from Jaipur, India.">
+    <meta name="description"
+        content="Dharakrafts International - Premium Natural Stone Manufacturer & Exporter from Jaipur, India.">
     <title>Dharakrafts International | Natural Stone Exporter</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Primary CSS -->
     <link rel="stylesheet" href="css/style_v2.css">
 </head>
+
 <body>
-    
+
     <!-- 1. Top Contact Bar -->
     <div class="top-bar">
         <div class="container top-bar-inner">
@@ -43,25 +48,40 @@
                 <span class="logo-bold">Dharakrafts</span>
                 <span class="logo-light">International</span>
             </a>
-            
+
             <!-- Desktop Nav -->
             <nav class="desktop-nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">Company</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="directors-message.html">Director's Message</a></li>
+                            <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
                         <a href="#products">Products <i class="fa-solid fa-chevron-down nav-icon"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="granite.html">Granite</a></li>
                             <li><a href="marble.html">Marble</a></li>
                             <li><a href="sandstone.html">Sandstone</a></li>
+                            <li><a href="slate.html">Slate</a></li>
                             <li><a href="pebbles.html">Pebbles</a></li>
                             <li><a href="quartz.html">Quartz</a></li>
                             <li><a href="monuments.html">Monuments</a></li>
                             <li><a href="statues.html">Statues</a></li>
                         </ul>
                     </li>
-                    <li><a href="#infrastructure">Infrastructure</a></li>
+                    <li class="dropdown">
+                        <a href="infrastructure-factory.html">Infrastructure <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="infrastructure-factory.html">Factory</a></li>
+                            <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                            <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                        </ul>
+                    </li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -82,42 +102,48 @@
         </div>
         <ul class="mobile-nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Company</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Company <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="directors-message.html">Director's Message</a></li>
+                    <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                </ul>
+            </li>
             <li>
                 <div class="mobile-dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></div>
                 <ul class="mobile-dropdown-menu">
                     <li><a href="granite.html">Granite</a></li>
                     <li><a href="marble.html">Marble</a></li>
                     <li><a href="sandstone.html">Sandstone</a></li>
+                    <li><a href="slate.html">Slate</a></li>
                     <li><a href="pebbles.html">Pebbles</a></li>
                     <li><a href="quartz.html">Quartz</a></li>
                     <li><a href="monuments.html">Monuments</a></li>
                     <li><a href="statues.html">Statues</a></li>
                 </ul>
             </li>
-            <li><a href="#infrastructure">Infrastructure</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Infrastructure <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="infrastructure-factory.html">Factory</a></li>
+                    <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                    <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                </ul>
+            </li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </div>
 
     <main>
-        <!-- 3. Hero Carousel -->
-        <section class="hero-carousel">
-            <div class="hero-slide active" style="background-image: url('assets/images/placeholder-granite.jpg');">
-                <div class="hero-overlay"></div>
-                <div class="container hero-content">
-                    <h2 class="hero-subtitle">Premium Quality</h2>
-                    <h1 class="hero-title">Indian Natural Stone<br>Exporter</h1>
-                    <p class="hero-desc">Quality That Lasts Generations. Shipped globally from Jaipur.</p>
-                    <a href="granite.html" class="btn btn-ghost">Click Here</a>
-                </div>
-            </div>
-            <!-- Slider Controls (Placeholder for JS logic) -->
-            <div class="hero-controls">
-                <button class="hero-prev"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="hero-next"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
+        <!-- 3. Hero Product Carousel -->
+        <section class="hero-carousel" id="heroCarousel">
+            <!-- Slides injected by JS -->
+
+            <!-- Slider Controls - centered on left/right -->
+            <button class="hero-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="hero-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
         </section>
 
         <!-- 4. Intro Header Section -->
@@ -125,7 +151,9 @@
             <div class="container text-center text-narrow">
                 <h2 class="section-title">A GOVT. RECOGNIZED NATURAL STONE MANUFACTURER & EXPORTER FROM INDIA</h2>
                 <div class="divider"></div>
-                <p class="section-subtitle">Dharakrafts International offers over 45 premium granite varieties sourced directly from quarries across India. We export high-quality Indian marble, quartzite, sandstone, and bespoke monuments globally.</p>
+                <p class="section-subtitle">Dharakrafts International offers over 45 premium granite varieties sourced
+                    directly from quarries across India. We export high-quality Indian marble, quartzite, sandstone, and
+                    bespoke monuments globally.</p>
             </div>
         </section>
 
@@ -134,31 +162,43 @@
             <div class="container">
                 <div class="category-grid">
                     <a href="granite.html" class="category-card">
-                        <div class="img-wrapper"><img src="assets/images/black-galaxy-granite-tiles-india.jpg" alt="Granite"></div>
+                        <div class="img-wrapper"><img src="assets/images/products/absolute_black_granite_final.png"
+                                alt="Granite"></div>
                         <h3 class="category-title">Granite</h3>
                     </a>
                     <a href="marble.html" class="category-card">
-                        <div class="img-wrapper"><img src="assets/images/maharani-pink-marble-exporter-jaipur.jpg" alt="Marble"></div>
+                        <div class="img-wrapper"><img src="assets/images/products/carrera_polish_marble_1773661227892.png"
+                                alt="Marble"></div>
                         <h3 class="category-title">Marble</h3>
                     </a>
+                    <a href="slate.html" class="category-card">
+                        <div class="img-wrapper"><img src="assets/images/products/copper-slatestone.jpg"
+                                alt="Slate"></div>
+                        <h3 class="category-title">Slate</h3>
+                    </a>
                     <a href="sandstone.html" class="category-card">
-                        <div class="img-wrapper"><img src="assets/images/kandla-grey-sandstone-paving-india.jpg" alt="Sandstone & Limestone"></div>
+                        <div class="img-wrapper"><img src="assets/images/products/Kandla-Grey-Sandstone-Split-Surface.webp"
+                                alt="Sandstone & Limestone"></div>
                         <h3 class="category-title">Sandstone & Limestone</h3>
                     </a>
                     <a href="quartz.html" class="category-card">
-                        <div class="img-wrapper"><img src="assets/images/kota-brown-limestone-flooring-india.jpg" alt="Quartz"></div>
+                        <div class="img-wrapper"><img src="assets/images/products/calacatta-statuario-quartz.jpg"
+                                alt="Quartz"></div>
                         <h3 class="category-title">Quartz</h3>
                     </a>
                     <a href="pebbles.html" class="category-card">
-                        <div class="img-wrapper"><img src="assets/images/rainbow-pebbles-supplier-india.jpg" alt="Pebbles"></div>
+                        <div class="img-wrapper"><img src="assets/images/products/epoxised-mix-color-pebbles.jpeg"
+                                alt="Pebbles"></div>
                         <h3 class="category-title">Pebbles</h3>
                     </a>
                     <a href="monuments.html" class="category-card">
-                        <div class="img-wrapper"><img src="assets/images/granite-monument-exporter-india.jpg" alt="Monuments"></div>
+                        <div class="img-wrapper"><img src="assets/images/products/french-style-monument-tombstone-shanxi-black-granit-monuments-p291120-1b.jpg"
+                                alt="Monuments"></div>
                         <h3 class="category-title">Monuments</h3>
                     </a>
                     <a href="statues.html" class="category-card">
-                        <div class="img-wrapper"><img src="assets/images/dharakrafts-natural-stone-exporter-jaipur.jpg" alt="Statues & Handicraft"></div>
+                        <div class="img-wrapper"><img src="assets/images/products/MaaDurga.webp"
+                                alt="Statues & Handicraft"></div>
                         <h3 class="category-title">Statues & Handicraft</h3>
                     </a>
                 </div>
@@ -172,34 +212,34 @@
                 <div class="divider"></div>
             </div>
             <div class="infra-grid">
-                <div class="infra-card" style="background-image: url('assets/images/IMG-20201101-WA0014.jpg');">
+                <a href="infrastructure-quality-control.html" class="infra-card" style="background-image: url('assets/images/IMG-20201101-WA0014.jpg'); text-decoration:none;">
                     <div class="infra-overlay"></div>
                     <div class="infra-content">
                         <h3>Quality Control</h3>
                         <p>Rigorous multi-stage inspection ensuring flawless delivery.</p>
                     </div>
-                </div>
-                <div class="infra-card" style="background-image: url('assets/images/IMG-20201101-WA0018.jpg');">
+                </a>
+                <a href="infrastructure-factory.html" class="infra-card" style="background-image: url('assets/images/IMG-20201101-WA0018.jpg'); text-decoration:none;">
                     <div class="infra-overlay"></div>
                     <div class="infra-content">
                         <h3>Custom Sizes</h3>
                         <p>Bespoke cutting and finishing to meet project specs.</p>
                     </div>
-                </div>
-                <div class="infra-card" style="background-image: url('assets/images/IMG_0879.JPG');">
+                </a>
+                <a href="infrastructure-packaging.html" class="infra-card" style="background-image: url('assets/images/IMG_0879.JPG'); text-decoration:none;">
                     <div class="infra-overlay"></div>
                     <div class="infra-content">
                         <h3>Global Logistics</h3>
                         <p>Seamless export handling to Europe, USA, and Gulf.</p>
                     </div>
-                </div>
-                <div class="infra-card" style="background-image: url('assets/images/IMG_0882.JPG');">
+                </a>
+                <a href="csr.html" class="infra-card" style="background-image: url('assets/images/IMG_0882.JPG'); text-decoration:none;">
                     <div class="infra-overlay"></div>
                     <div class="infra-content">
                         <h3>Ethical Sourcing</h3>
                         <p>Direct from Indian quarries with fair trade practices.</p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 
@@ -207,12 +247,15 @@
         <section class="csr-section bg-light">
             <div class="container csr-container">
                 <div class="csr-image">
-                    <img src="assets/images/placeholder-granite.jpg" alt="Corporate Social Responsibility">
+                    <img src="assets/images/products/elephant.jpg" alt="Corporate Social Responsibility">
                 </div>
                 <div class="csr-content">
                     <h2 class="section-title">CORPORATE SOCIAL RESPONSIBILITY</h2>
                     <div class="divider" style="margin: 1.5rem 0;"></div>
-                    <p>At Dharakrafts International, we believe in giving back to the community and ensuring sustainable mining practices. We actively support local education initiatives in Rajasthan, plant trees around our quarry sites, and ensure strict zero child-labor policies across all our manufacturing units.</p>
+                    <p>At Dharakrafts International, we believe in giving back to the community and ensuring sustainable
+                        mining practices. We actively support local education initiatives in Rajasthan, plant trees
+                        around our quarry sites, and ensure strict zero child-labor policies across all our
+                        manufacturing units.</p>
                 </div>
             </div>
         </section>
@@ -223,10 +266,18 @@
                 <h3 class="cert-title">OUR CERTIFICATIONS & AFFILIATIONS</h3>
                 <div class="cert-logos">
                     <!-- Placeholder icons to represent logos -->
-                    <div class="cert-item"><i class="fa-solid fa-award fa-3x"></i><p>ISO 9001</p></div>
-                    <div class="cert-item"><i class="fa-solid fa-certificate fa-3x"></i><p>CE Certified</p></div>
-                    <div class="cert-item"><i class="fa-solid fa-globe fa-3x"></i><p>CAPEXIL</p></div>
-                    <div class="cert-item"><i class="fa-solid fa-shield-halved fa-3x"></i><p>D&B</p></div>
+                    <div class="cert-item"><i class="fa-solid fa-award fa-3x"></i>
+                        <p>ISO 9001</p>
+                    </div>
+                    <div class="cert-item"><i class="fa-solid fa-certificate fa-3x"></i>
+                        <p>CE Certified</p>
+                    </div>
+                    <div class="cert-item"><i class="fa-solid fa-globe fa-3x"></i>
+                        <p>CAPEXIL</p>
+                    </div>
+                    <div class="cert-item"><i class="fa-solid fa-shield-halved fa-3x"></i>
+                        <p>D&B</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -239,25 +290,25 @@
             <div class="footer-col">
                 <h4>Head Office</h4>
                 <div class="footer-contact">
-                    <p><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan, India</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 94140 43945</p>
                     <p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p>
                 </div>
             </div>
             <div class="footer-col">
-                <h4>South India Factory</h4>
+                <h4>Factory</h4>
                 <div class="footer-contact">
-                    <p><i class="fa-solid fa-location-dot"></i> Hosur, Tamil Nadu, India</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 87654 32109</p>
-                    <p><i class="fa-solid fa-envelope"></i> south@dharakrafts.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 1C3 Kondapanayanpalli (Vill), SDP Industrial Area, Krishnagiri, Tamil Nadu</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 94140 43945</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p>
                 </div>
             </div>
             <div class="footer-col">
-                <h4>North India Factory</h4>
+                <h4>UK Contact</h4>
                 <div class="footer-contact">
-                    <p><i class="fa-solid fa-location-dot"></i> Kishangarh, Rajasthan, India</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 76543 21098</p>
-                    <p><i class="fa-solid fa-envelope"></i> north@dharakrafts.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p>
+                    <p><i class="fa-solid fa-phone"></i> +44 7436 710266</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p>
                 </div>
             </div>
         </div>
@@ -279,11 +330,12 @@
     </div>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/911234567890" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/919414043945" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
     </a>
 
     <!-- Primary Script -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=49"></script>
 </body>
+
 </html>

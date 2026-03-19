@@ -22,20 +22,35 @@
             <nav class="desktop-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Company</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="directors-message.html">Director's Message</a></li>
+                            <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
                         <a href="index.html#products" class="active">Products <i class="fa-solid fa-chevron-down nav-icon"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="granite.html">Granite</a></li>
                             <li><a href="marble.html">Marble</a></li>
                             <li><a href="sandstone.html">Sandstone</a></li>
+                            <li><a href="slate.html">Slate</a></li>
                             <li><a href="pebbles.html">Pebbles</a></li>
                             <li><a href="quartz.html" class="active">Quartz</a></li>
                             <li><a href="monuments.html">Monuments</a></li>
                             <li><a href="statues.html">Statues</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.html#infrastructure">Infrastructure</a></li>
+                    <li class="dropdown">
+                        <a href="infrastructure-factory.html">Infrastructure <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="infrastructure-factory.html">Factory</a></li>
+                            <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                            <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                        </ul>
+                    </li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -52,20 +67,35 @@
         </div>
         <ul class="mobile-nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Company</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Company <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="directors-message.html">Director's Message</a></li>
+                    <li><a href="csr.html">Corporate Social Responsibility</a></li>
+                </ul>
+            </li>
             <li>
                 <div class="mobile-dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></div>
                 <ul class="mobile-dropdown-menu">
             <li><a href="granite.html">Granite</a></li>
             <li><a href="marble.html">Marble</a></li>
             <li><a href="sandstone.html">Sandstone</a></li>
+                            <li><a href="slate.html">Slate</a></li>
             <li><a href="pebbles.html">Pebbles</a></li>
             <li><a href="quartz.html">Quartz</a></li>
             <li><a href="monuments.html">Monuments</a></li>
             <li><a href="statues.html">Statues</a></li>
                 </ul>
             </li>
-            <li><a href="index.html#infrastructure">Infrastructure</a></li>
+            <li>
+                <div class="mobile-dropdown-toggle">Infrastructure <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="infrastructure-factory.html">Factory</a></li>
+                    <li><a href="infrastructure-quality-control.html">Quality Control</a></li>
+                    <li><a href="infrastructure-packaging.html">Packaging Unit</a></li>
+                </ul>
+            </li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -82,18 +112,31 @@
         <section class="product-hero-section">
             <div class="container product-hero">
                 <div class="product-main-img">
-                    <div class="product-placeholder" style="font-size: 8rem;">C</div>
+                    <img src="assets/images/products/calacatta-unique-quartz.jpg" alt="Calacatta Unique Quartz" class="product-detail-image">
                 </div>
                 <div class="product-specs">
                     <h3>Technical Specifications</h3>
                     <table class="product-specs-table">
                         <tbody>
 
-                            <tr><td>Tiles Size</td><td>30x30, 60x30, 60x40, 60x60, 80x80 CM</td></tr>
-                            <tr><td>Cutter Slabs</td><td>180-300 x 60-90 CM</td></tr>
-                            <tr><td>Gangsaw Slabs</td><td>260-320 x 150-200 CM</td></tr>
-                            <tr><td>Thickness</td><td>18mm, 20mm, 30mm (Custom thickness available)</td></tr>
-                            <tr><td>Finishes</td><td>Polished, Honed, Flamed, Brushed, Leather</td></tr>
+                            
+                            <tr>
+                                <td>Slab Sizes</td>
+                                <td>305x144 CM (Standard)</td>
+                            </tr>
+                            <tr>
+                                <td>Thickness</td>
+                                <td>20mm, 30mm</td>
+                            </tr>
+                            <tr>
+                                <td>Finishes</td>
+                                <td>Polished, Honed</td>
+                            </tr>
+                            <tr>
+                                <td>Applications</td>
+                                <td>Countertops, Islands, Vanity Tops, Decorative Panels</td>
+                            </tr>
+
                                 </tbody>
                     </table>
                     <a href="contact.html" class="btn-enquiry">Get A Custom Quote</a>
@@ -107,12 +150,8 @@
                     <div class="detail-tab">Product Description</div>
                 </div>
                 <div class="product-details-content">
-                    <p>The beauty of the purest white contrasts with dark, sinuous veins, giving rise to an elegance and luminosity like never before. This is how we transform empty, silent spaces into unforgettable, living places, imbued with personality and style.</p>
-<p>We are one of India&#x27;s prominent producers, manufacturers and exporters of Calacatta Unique Quartz. At the rock bottom prices of our granite factory in India, we will supply good quality Calacatta Unique Quartz Tiles, Calacatta Unique Quartz Slabs, Calacatta Unique Quartz Countertops, Calacatta Unique Quartz Vanity Tops, Calacatta Unique Quartz Stairs and Windowsill, etc.</p>
-<p>Presently, Calacatta Unique Quartz is extremely in demand. We have successfully established ourselves as India&#x27;s most fulfilling Calacatta Unique Quartz Suppliers &amp; Calacatta Unique Quartz Exporters with our best product offerings to our worldwide customers and timely deliveries. No matter what size, thickness or finish you need, we will certainly deliver it to you.</p>
-<p>We pack our Calacatta Unique Quartz Slabs and Calacatta Unique Quartz Tiles and Steps Risers in wooden crates which are fresh and suitable in Sea. Firstly they are wrapped in thin polythene sheets, these Calacatta Unique Quartz slabs and tiles are shipped worldwide from Chennai, Mumbai, Mundra Sea Port situated in India by container loads.</p>
-<p>We are at Dharakrafts International Export Calacatta Unique Quartz to USA, UK, Europe, Australia, Russia, Germany, France, Italy, Spain, Sweden, Nederland, Turkey, Poland, Albania, Romania, Union, Hong Kong, Belgium, South Korea, Canada, Mexico, Singapore, Switzerland, Laos, Maldives, Bermuda, Guyana and many other European countries.</p>
-
+                    <p>Discover the modern luxury of Calacatta Unique Quartz, an engineered stone surface designed for both breathtaking beauty and supreme functionality. Known for its consistent texture, striking veining, and non-porous nature, this quartz variety offers the high-end look of natural marble with unparalleled resistance to stains, scratches, and heat.</p>
+<p>As a trusted global supplier, Dharakrafts International exports premium Calacatta Unique Quartz slabs and pre-fabricated countertops for residential and commercial projects. Ideal for kitchen worktops, vanity spaces, and feature walls, we provide this remarkable quartz in tailored thicknesses and edge profiles, ensuring a flawless addition to your architectural designs.</p>
                 </div>
             </div>
         </section>
@@ -121,13 +160,13 @@
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container footer-grid">
-            <div class="footer-col"><h4>Head Office</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan, India</p><p><i class="fa-solid fa-phone"></i> +91 98765 43210</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
-            <div class="footer-col"><h4>South India Factory</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> Hosur, Tamil Nadu, India</p><p><i class="fa-solid fa-phone"></i> +91 87654 32109</p><p><i class="fa-solid fa-envelope"></i> south@dharakrafts.com</p></div></div>
-            <div class="footer-col"><h4>North India Factory</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> Kishangarh, Rajasthan, India</p><p><i class="fa-solid fa-phone"></i> +91 76543 21098</p><p><i class="fa-solid fa-envelope"></i> north@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>Head Office</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p><p><i class="fa-solid fa-phone"></i> +91 94140 43945</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>Factory</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> 1C3 Kondapanayanpalli (Vill), SDP Industrial Area, Krishnagiri, Tamil Nadu</p><p><i class="fa-solid fa-phone"></i> +91 94140 43945</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
+            <div class="footer-col"><h4>UK Contact</h4><div class="footer-contact"><p><i class="fa-solid fa-location-dot"></i> B-45 Godara Colony, Jhotwara, Jaipur, Rajasthan</p><p><i class="fa-solid fa-phone"></i> +44 7436 710266</p><p><i class="fa-solid fa-envelope"></i> info@dharakrafts.com</p></div></div>
         </div>
     </footer>
     <div class="copyright-bar"><div class="container copyright-inner"><div class="copy-text">&copy; 2026 Dharakrafts International. All Rights Reserved.</div><div class="copy-links"><a href="#">Privacy Policy</a><a href="#">Disclaimer</a><a href="faq.html">FAQ's</a><a href="#">Sitemap</a></div></div></div>
-    <a href="https://wa.me/911234567890" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
-    <script src="js/main.js"></script>
+    <a href="https://wa.me/919414043945" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+    <script src="js/main.js?v=28"></script>
 </body>
 </html>
