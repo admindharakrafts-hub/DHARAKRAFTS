@@ -128,13 +128,14 @@
             </div>
         </section>
 
-        <!-- About Intro -->
+        <!-- About Intro — Who We Are -->
         <section class="section">
             <div class="container" style="max-width:900px;">
                 <h2 class="section-title" style="text-align:center;">Who We Are</h2>
                 <div class="divider"></div>
-                <p style="color:var(--color-text-muted); line-height:1.9; margin-bottom:16px; margin-top:30px;">Dharakrafts International is a government-recognized natural stone manufacturer and exporter headquartered in Jaipur, Rajasthan — the heart of India's natural stone belt. Founded and led by <strong>Mr. Mohit Lamba</strong>, the company has built a reputation for delivering premium-grade Indian natural stones to clients across 30+ countries worldwide.</p>
-                <p style="color:var(--color-text-muted); line-height:1.9;">With our head office at B-45 Godara Colony, Jhotwara, Jaipur, and a state-of-the-art processing factory at 1C3 Kondapanayanpalli, SDP Industrial Area, Krishnagiri, Tamil Nadu, we control the entire value chain — from raw block extraction at the quarry to precision cutting, finishing, quality inspection, export packaging, and container loading. This vertical integration allows us to guarantee consistent quality, competitive pricing, and on-time delivery for every order.</p>
+                <p style="color:var(--color-text-muted); line-height:1.9; margin-bottom:16px; margin-top:30px;"><strong>Dharakrafts International</strong> is a government-recognized manufacturer and direct exporter of premium Indian natural stone, headquartered in Jaipur, Rajasthan — the epicentre of the world's most prolific natural stone belt. Under the visionary leadership of <strong>Mr. Mohit Lamba</strong>, the company has evolved into a vertically integrated export powerhouse, delivering precision-processed stone to architects, contractors, landscapers, and distributors across <strong>30+ countries</strong> on five continents.</p>
+                <p style="color:var(--color-text-muted); line-height:1.9; margin-bottom:16px;">With corporate offices in Jaipur and a fully owned, state-of-the-art processing facility at SDP Industrial Area, Krishnagiri, Tamil Nadu, we command the entire value chain — from quarry-face block selection and gang-saw cutting to calibration, finishing, multi-point quality inspection, export-grade packaging, and full container loading. This end-to-end control is what allows us to guarantee dimensional accuracy, surface consistency, and on-time delivery on every single order.</p>
+                <p style="color:var(--color-text-muted); line-height:1.9;">We are not a trading house. We are a manufacturer. Every slab, tile, monument, and sculpture that carries the Dharakrafts name is processed in our own factory, inspected by our own QC team, and packed in our own packaging unit — giving our global clients the transparency, reliability, and pricing advantage that only a direct-source manufacturer can offer.</p>
             </div>
         </section>
 
@@ -164,6 +165,14 @@
             .stats-bar-inner { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; text-align: center; }
             .stat-box h3 { font-size: 2.2rem; color: var(--color-primary-gold); font-family: var(--font-heading); }
             .stat-box p { color: var(--color-text-muted); font-size: 0.85rem; margin-top: 4px; }
+            .industry-positioning { padding: 60px 0; background: var(--color-white); }
+            .industry-positioning .section-title { text-align: center; }
+            .ip-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+            .ip-card { background: var(--color-bg-light); border-radius: 10px; padding: 32px 24px; text-align: center; border-top: 3px solid var(--color-primary-gold); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+            .ip-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+            .ip-card i { color: var(--color-primary-gold); font-size: 1.8rem; margin-bottom: 14px; }
+            .ip-card h4 { font-size: 1rem; color: var(--color-bg-dark); margin-bottom: 8px; font-weight: 700; }
+            .ip-card p { color: var(--color-text-muted); font-size: 0.88rem; line-height: 1.6; }
             .cta-about { background: var(--color-bg-dark); padding: 55px 0; text-align: center; }
             .cta-about h2 { color: var(--color-white); font-size: 1.8rem; margin-bottom: 14px; }
             .cta-about p { color: #bbb; max-width: 620px; margin: 0 auto 28px; line-height: 1.8; }
@@ -173,10 +182,12 @@
                 .story-grid, .mv-grid { grid-template-columns: 1fr; }
                 .prod-cats { grid-template-columns: repeat(2, 1fr); }
                 .stats-bar-inner { grid-template-columns: repeat(3, 1fr); }
+                .ip-grid { grid-template-columns: 1fr 1fr; }
             }
             @media (max-width: 540px) {
                 .prod-cats { grid-template-columns: 1fr 1fr; }
                 .stats-bar-inner { grid-template-columns: repeat(2, 1fr); }
+                .ip-grid { grid-template-columns: 1fr; }
             }
         </style>
 
@@ -184,9 +195,9 @@
             <div class="container" style="max-width:900px;">
                 <h2 class="section-title" style="text-align:center;">Our Story</h2>
                 <div class="divider"></div>
-                <p style="color:var(--color-text-muted); line-height:1.9; margin-bottom:16px; margin-top:30px;">Dharakrafts International was born from a simple belief: that the extraordinary natural stones of India deserve to be showcased to the world with the quality, reliability, and professionalism that international buyers expect. Under the leadership of Mr. Mohit Lamba, we have grown from a regional stone supplier into a trusted global export house serving clients on every continent.</p>
-                <p style="color:var(--color-text-muted); line-height:1.9; margin-bottom:16px;">Rajasthan is home to some of the world's finest quarries — producing everything from the iconic Makrana White Marble that built the Taj Mahal to the richly textured sandstones and slates used in heritage buildings across Europe. Our deep roots in this region give us unmatched access to raw materials, skilled artisans, and generations of stone-working knowledge.</p>
-                <p style="color:var(--color-text-muted); line-height:1.9;">Our factory in Krishnagiri, Tamil Nadu, adds strategic depth — positioned close to South Indian granite quarries and major export ports like Chennai and Tuticorin, enabling faster turnaround times for granite, monument, and statue orders destined for international markets.</p>
+                <p style="color:var(--color-text-muted); line-height:1.9; margin-bottom:16px; margin-top:30px;">Dharakrafts International was founded on a conviction that the extraordinary natural stones of India — renowned for centuries and used in landmarks from the Taj Mahal to European heritage facades — deserve to reach the global stage with the precision, consistency, and professionalism that today's international buyers demand. What began as a focused stone sourcing operation in Rajasthan has grown, under <strong>Mr. Mohit Lamba's</strong> leadership, into a full-scale manufacturing and export enterprise serving clients across five continents.</p>
+                <p style="color:var(--color-text-muted); line-height:1.9; margin-bottom:16px;">Rajasthan sits on one of the world's richest geological belts for natural stone — producing the legendary Makrana White Marble, the warm-toned Fossil Mint and Raj Green Sandstones, and an unrivalled spectrum of slates, limestones, and pebbles. Our headquarters in Jaipur places us at the nerve centre of this region, giving us first-access relationships with quarry owners, master craftsmen, and multi-generation stone artisans.</p>
+                <p style="color:var(--color-text-muted); line-height:1.9;">Our fully owned processing factory in Krishnagiri, Tamil Nadu, complements this geographic advantage with strategic depth — situated close to India's top-grade South Indian granite quarries and within easy reach of the ports of Chennai and Tuticorin. This dual-location model means faster turnaround, lower logistics costs, and the ability to fulfil complex multi-stone orders from a single, reliable source.</p>
             </div>
         </section>
 
@@ -195,50 +206,50 @@
             <div class="container mv-grid">
                 <div class="mv-card">
                     <h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
-                    <p>To supply premium quality Indian natural stones at the most competitive prices to our global customers, while maintaining the highest standards of ethical sourcing, fair labour practices, and environmental responsibility. We aim to be a one-stop partner for architects, builders, and landscapers who demand excellence.</p>
+                    <p>To be the world's most reliable source of premium Indian natural stone — delivering export-grade granite, marble, sandstone, slate, quartz, pebbles, monuments, and sculptures at factory-direct pricing with uncompromising quality, ethical sourcing, and on-time shipping. We exist to simplify international stone procurement for architects, builders, landscapers, and memorial companies who refuse to compromise on quality.</p>
                 </div>
                 <div class="mv-card">
                     <h3><i class="fa-solid fa-eye"></i> Our Vision</h3>
-                    <p>To become the most trusted name in Indian natural stone exports — recognised worldwide for uncompromising quality, innovative product development, and a commitment to building long-term relationships with every client we serve. We envision a future where Dharakrafts stone is the first choice for premium projects across the globe.</p>
+                    <p>To build Dharakrafts International into the most trusted and preferred Indian natural stone brand worldwide — recognized for manufacturing excellence, product innovation, and a relentless commitment to long-term partnerships. We envision every project that demands premium Indian stone turning to Dharakrafts first — not because we are the biggest, but because we are the most reliable.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Why Choose Us -->
+        <!-- Why Choose Us — Core Strengths -->
         <section class="section bg-light">
             <div class="container text-center">
-                <h2 class="section-title">Why Choose Dharakrafts?</h2>
+                <h2 class="section-title">Why Global Buyers Choose Dharakrafts</h2>
                 <div class="divider"></div>
                 <div class="features-grid">
                     <div class="feature-card">
                         <i class="fa-solid fa-gem fa-3x"></i>
-                        <h3>Premium Quality</h3>
-                        <p>Direct quarry sourcing with multi-stage quality inspection ensures only the finest grade stone reaches our clients.</p>
+                        <h3>Uncompromising Quality</h3>
+                        <p>Every piece passes a rigorous 6-stage quality control process — from raw block grading at the quarry to final surface, dimension, and shade verification before packaging. We don't ship anything we wouldn't approve ourselves.</p>
                     </div>
                     <div class="feature-card">
                         <i class="fa-solid fa-globe fa-3x"></i>
-                        <h3>Global Export</h3>
-                        <p>We export to 30+ countries with complete documentation, containerisation, and freight coordination support.</p>
+                        <h3>True Global Reach</h3>
+                        <p>Exporting to 30+ countries across Europe, North America, the Middle East, Australia, and Africa with full export documentation, LCL/FCL containerisation, and end-to-end freight coordination.</p>
                     </div>
                     <div class="feature-card">
                         <i class="fa-solid fa-ruler-combined fa-3x"></i>
-                        <h3>Custom Sizes &amp; Finishes</h3>
-                        <p>Full customization on dimensions, thickness, surface finish, and edge profiles to match any project specification.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fa-solid fa-handshake fa-3x"></i>
-                        <h3>Trusted Partner</h3>
-                        <p>Government-recognized export house with CAPEXIL membership and 500+ satisfied global clients.</p>
+                        <h3>Full Customisation</h3>
+                        <p>Custom dimensions, thickness options, surface finishes (polished, honed, flamed, brushed, tumbled, shotblast), edge profiles, and bespoke monument designs — tailored to your exact project specification.</p>
                     </div>
                     <div class="feature-card">
                         <i class="fa-solid fa-industry fa-3x"></i>
-                        <h3>In-House Manufacturing</h3>
-                        <p>Our own cutting, polishing, and finishing facilities in Tamil Nadu give us complete control over production timelines.</p>
+                        <h3>Own Manufacturing</h3>
+                        <p>We are not a broker or trading house. Our own processing factory — equipped with gang-saws, multi-blade cutters, polishing lines, and CNC profilers — gives us full control over quality, cost, and timelines.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-handshake fa-3x"></i>
+                        <h3>Proven Reliability</h3>
+                        <p>Government-recognized export house with CAPEXIL membership, 500+ global clients served, and a track record of repeat orders that speaks louder than any brochure.</p>
                     </div>
                     <div class="feature-card">
                         <i class="fa-solid fa-truck-fast fa-3x"></i>
-                        <h3>On-Time Delivery</h3>
-                        <p>Strategic factory location near ports, combined with our own packaging unit, ensures every shipment leaves on schedule.</p>
+                        <h3>On-Time, Every Time</h3>
+                        <p>Strategic factory location near Chennai and Tuticorin ports, combined with our in-house packaging unit, means every container is loaded, sealed, and dispatched on schedule — no excuses.</p>
                     </div>
                 </div>
             </div>
@@ -294,24 +305,64 @@
             </div>
         </section>
 
+        <!-- Industry Positioning -->
+        <section class="industry-positioning">
+            <div class="container">
+                <h2 class="section-title">Industry Standing &amp; Credentials</h2>
+                <div class="divider" style="margin: 1rem auto 0;"></div>
+                <div class="ip-grid">
+                    <div class="ip-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h4>Government-Recognized Export House</h4>
+                        <p>Registered with DGFT and recognized as a legitimate, compliance-cleared export entity by the Government of India.</p>
+                    </div>
+                    <div class="ip-card">
+                        <i class="fa-solid fa-award"></i>
+                        <h4>CAPEXIL Member</h4>
+                        <p>Active member of the Chemical &amp; Allied Products Export Promotion Council — India's apex body for stone and mineral exports.</p>
+                    </div>
+                    <div class="ip-card">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <h4>Multi-Continent Presence</h4>
+                        <p>Active export relationships in Europe, UK, North America, Middle East, Australia, and Africa with dedicated UK liaison support.</p>
+                    </div>
+                    <div class="ip-card">
+                        <i class="fa-solid fa-building"></i>
+                        <h4>Dual Manufacturing Bases</h4>
+                        <p>Two strategically located facilities — Jaipur (marble, sandstone, slate, pebbles) and Krishnagiri, TN (granite, monuments, statues) — for maximum versatility.</p>
+                    </div>
+                    <div class="ip-card">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <h4>In-House Packaging Unit</h4>
+                        <p>Purpose-built packaging facility for wooden crates, palletisation, and container stuffing — ensuring zero-damage delivery worldwide.</p>
+                    </div>
+                    <div class="ip-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h4>Ethical &amp; Sustainable Sourcing</h4>
+                        <p>Committed to fair labour practices, responsible quarrying, and environmentally conscious processing across our entire supply chain.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Stats -->
         <section class="stats-bar">
             <div class="container stats-bar-inner">
                 <div class="stat-box">
                     <h3>100+</h3>
-                    <p>Stone Varieties</p>
+                    <p>Natural Stone Varieties</p>
                 </div>
                 <div class="stat-box">
                     <h3>30+</h3>
-                    <p>Export Countries</p>
+                    <p>Export Destinations</p>
                 </div>
                 <div class="stat-box">
                     <h3>500+</h3>
-                    <p>Skilled Workers</p>
+                    <p>Skilled Craftsmen</p>
                 </div>
                 <div class="stat-box">
                     <h3>2</h3>
-                    <p>Manufacturing Units</p>
+                    <p>Own Manufacturing Units</p>
                 </div>
                 <div class="stat-box">
                     <h3>100%</h3>
@@ -323,9 +374,9 @@
         <!-- CTA -->
         <section class="cta-about">
             <div class="container">
-                <h2>Ready to Source Premium Indian Stone?</h2>
-                <p>From a single sample to full container loads — our team is ready to help you find the perfect natural stone for your next project.</p>
-                <a href="contact.html" class="btn-gold">Get a Free Quote</a>
+                <h2>Partner with a Manufacturer You Can Trust</h2>
+                <p>Whether you need a single sample for approval or full container loads for a landmark project — our team is ready to deliver the finest Indian natural stone, on spec and on time.</p>
+                <a href="contact.html" class="btn-gold">Request a Quote</a>
             </div>
         </section>
     </main>
